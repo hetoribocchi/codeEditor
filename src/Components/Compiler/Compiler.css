@@ -1,0 +1,23 @@
+.compiler-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+.compiler-title{
+    display: flex;
+    h3{
+        color: white;
+    }
+}
+.code-mirror-wrapper{
+    flex-grow: 1;
+    overflow: hidden;
+}
+.CodeMirror{
+    height: 100% !important;
+}
+pre{
+    visibility: hidden;
+}
