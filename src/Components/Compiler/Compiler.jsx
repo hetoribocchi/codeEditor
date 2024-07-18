@@ -15,8 +15,8 @@ const Compiler = (props) => {
         value,
         ontype
     } = props
-    function handleChange(editor, data, value) {
-        ontype(value)
+    function handleChange(editor, data, newValue) {
+        ontype(newValue)
     }
   return (
     <div className='compiler-container'>

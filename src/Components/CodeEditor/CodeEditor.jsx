@@ -20,11 +20,11 @@ const CodeEditor = () => {
     useEffect(()=>{
         const timeOut =setTimeout(()=>{
             setSrcDoc(
-                <html>
+                `<html>
                     <body>${html}</body>
                     <style>${css}</style>
                     <script>${js}</script>
-                </html>
+                </html>`
             )
         }, 250)
         return ()=> clearTimeout(timeOut)

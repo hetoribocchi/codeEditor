@@ -18,6 +18,8 @@
 .CodeMirror{
     height: 100% !important;
 }
-pre{
-    visibility: hidden;
+.CodeMirror-linenumber{
+    opacity: 0.5;
+    color: white !important;
 }
+
