@@ -13,11 +13,13 @@ const Compiler = (props) => {
         language,
         title,
         value,
-        ontype
+        onChange
     } = props
-    function handleChange(editor, data, newValue) {
-        ontype(newValue)
+    
+    function handleChange(editor, data, value) {
+        onChange(value)
     }
+    
   return (
     <div className='compiler-container'>
         <div className='compiler-title'>

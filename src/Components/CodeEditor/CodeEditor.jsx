@@ -43,8 +43,8 @@ const CodeEditor = () => {
                         <a> Colabarate</a>
                 </div>
                 <div className="nav-left">
-                <MdOutlineBolt color='#ffb24e' />
-                <p>Go PRO</p>
+                <button><MdOutlineBolt color='#ffb24e' />
+                <p>Go PRO</p></button>
                 <GiSettingsKnobs color='white' />
                 <a> Settings</a>
                 <a> Sign in</a>
@@ -68,7 +68,7 @@ const CodeEditor = () => {
                    value = {html}
                    title = 'HTML' 
                    language = 'xml' 
-                   ontype = {setHtml}
+                   onChange = {setHtml}
                    />
                 </div>
                 <div className='js'>
@@ -76,7 +76,7 @@ const CodeEditor = () => {
                 language = 'javascript' 
                 title = 'Javascript' 
                 value = {js}
-                ontype = {setJs}/>
+                onChange = {setJs}/>
                 </div>
             </div>
             <div className="left-box">
@@ -85,7 +85,7 @@ const CodeEditor = () => {
             language = 'css' 
             title = 'CSS' 
             value = {css}
-            ontype = {setCss} 
+            onChange = {setCss} 
             />
             </div>
             <div className='output'>
